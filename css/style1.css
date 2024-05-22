@@ -1,0 +1,625 @@
+header{
+    background-color: #02267C;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 15%;
+    height: 180px;
+    margin-left: 1%;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+#titulo{
+    width: 45%;
+    height: 140px;
+    margin-right: 1%;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Bruno Ace', cursive;
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 140px;
+    color: #F0E8D5;
+}
+
+#menu_hamburguesa{
+    margin-right: 1%;
+    width: 15%;
+    height: 100%;
+}
+
+#menu_img{
+    height: 200px;
+    width: 100%;
+}
+
+.rayas{
+    position: absolute;
+    z-index: 1;
+}
+
+#menu_img a{
+    height: 170px;
+}
+
+#menu_hamburguesa ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menu_hamburguesa ul li {
+    display: flex;
+    flex-direction: column;
+}
+#menu_hamburguesa ul li a {
+    display: flex;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+#margin{
+    margin-top: 200px;
+}
+
+li{
+    width: 100%px;
+    /*text-align: center;*/
+}
+
+.temas{
+    padding: 50px;
+    color: chartreuse;
+    height: 30px;
+    line-height: 30px;
+}
+
+.menu_vertical ul li{
+    padding: 50px;
+}
+
+#menu_hamburguesa ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+#menu_hamburguesa ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+#menu_hamburguesa ul li a:hover {
+    background-color: #093aad;
+}
+
+.menu-vertical {
+    display: none;
+    position: absolute;
+    width: 15%;
+    background-color: #02267C;
+}
+
+.menu-horizontal{
+    width: 100%;
+}
+
+.menu-horizontal:hover .menu-vertical {
+    display: block;
+}
+
+main{
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    background-image: url(../imgs/cuadricula.svg);
+    background-position: center;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor{
+    width: 85%;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../imgs/nube_horizontal.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#icon_tema1{
+    width: 35%;
+    height: 500px;
+    display: flex;
+    background-image: url(../imgs/hoja.png);
+    background-size: cover;
+    background-position: center;
+    justify-content: space-around;
+}
+
+#card{
+    width: 27%;
+    height: 190px;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card_png{
+    width: 320px;
+    height: 230px;
+}
+
+#desc p{
+    width: 90%;
+    color: #093aad;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    padding: 20px;
+}
+
+#desc{
+    width: 90%;
+    height: 300px;
+    border-radius: 15px;
+    margin-top: 190px;
+}
+
+#desc h2{
+    font-family: 'Bruno Ace', cursive;
+    font-size: 25px;
+    padding: 10px;
+    padding-top: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color: #02267C;
+}
+
+#section_scroll{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stiker{
+    position: absolute;
+    z-index: 2;
+}
+
+#stiker_1{
+    width: 200px;
+    height: 200px;
+    background-image: url(../imgs/flor.png);
+    background-size: cover;
+    background-position:center;
+    margin-right: 38%;
+    margin-bottom: 20%;
+}
+
+#stiker_2{
+    width: 200px;
+    height: 200px;
+    background-image: url(../imgs/gato.png);
+    background-size: cover;
+    background-position:center;
+    margin-right: 37%;
+    margin-top: 12%;
+}
+
+#stiker_3{
+    width: 15%;
+    height: 30%;
+    background-image: url(../imgs/blorbo_studying.png);
+    background-size: cover;
+    background-position:center;
+    margin-right: 25%;
+    margin-top: 25%;
+}
+
+.scroll-bg {
+    width: 85%;
+    float: left;
+    border-radius: 15px;
+    padding: 10px;
+    background-image: url(../imgs/hoja.png);
+    background-size:100%;
+    background-position: center;
+}
+
+.scroll-div {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.scroll-object {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer{
+    background-color: #02267C;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#links{
+    width: 70%;
+    height: 300px;
+}
+
+.opcion{
+    text-decoration: none;
+    color: #F0E8D5;
+    padding: 10px;
+}
+
+#pfp_contenedor{
+    width: 23%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pfp{
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.link{
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+}
+
+.contenedores_parrafos{
+    font-family: 'Lato', sans-serif;
+    width: 85%;
+    background-color: #F0E8D5;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 75px ;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-object p{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.scroll-object h3{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    color: #093aad;
+}
+
+.scroll-object li{
+    font-size: 16px;
+    padding: 10px;
+}
+
+b{
+    font-weight: bold;
+}
+
+.img_info{
+    width: 90%;
+    height: 75px;
+    margin-top: 10px;
+}
+
+.img_info1{
+    width: 90%;
+    height: 110px;
+    margin-top: 10px;
+}
+
+.img_info2{
+    width: 90%;
+    height: 180px;
+    margin-top: 10px;
+}
+
+.img_info3{
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+}
+
+m{
+ margin-left: 10px;
+ color: #093aad;
+}
+
+n{
+    color: #093aad;
+}
+
+@media only screen and (max-width: 768px) {
+    article{
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 120px;
+        width: 100%;
+    }
+    #logo {
+        width: 25%;
+        height: 100px;
+        margin-left: 5%;
+    }
+    #titulo {
+        width: 0%;
+        height: 80px;
+        margin-right: 5%;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 80px;
+    }
+    #menu_hamburguesa {
+        width: 25%;
+    }
+
+    #fotos{
+        display: none;
+    }
+
+    #collague{
+        width: 100%;
+        height: 100px;
+    }
+
+    .rayas{
+        width: 100%;
+        height: 60px;
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+
+    #grupo_temas{
+        width: 100%;
+        display: flex;
+        background-image: url(../imgs/nube.svg);
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .temas{
+        height: auto;
+        width: 80%;
+    }
+
+    .tema{
+        width: 60%;
+        height: 40px;
+    }
+
+    .titulo_tema{
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    #circulo{
+        width: 170px;
+        height: 170px;
+        margin-top: 45px;
+    }
+
+    .menu-vertical {
+        width: 30%;
+        background-color: #02267C;
+        z-index: 4;
+    }
+
+    .menu-vertical :hover {
+        background-color: #093aad;
+    }
+
+    #menu_img{
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+
+    }
+
+    #margin{
+        margin-top: 100px;
+    }
+
+    #menu_img a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        width: 50%;
+        padding: 10px;
+    }
+
+    #menu_hamburguesa ul li a {
+        display: flex;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        position: relative;
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .opcion{
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .link{
+        padding: 1px;
+    }
+
+    #pfp_contenedor{
+        width: 90px;
+        height: 90px;
+    }
+
+    #links{
+        height: 90px;
+        font-size: 1px;
+    }
+
+    #hide1{
+        display: none;
+    }
+
+    #hide2{
+        display: none;
+    }
+
+    #icon_tema1{
+        display: none;
+    }
+    .scroll-bg{
+        background-repeat: no-repeat;
+        width: 90%;
+        height: 300;
+    }
+
+    #section_scroll{
+        width: 100%;
+    }
+
+    #stiker_1{
+        width: 140px;
+        height: 140px;
+        margin-bottom: 450px;
+        margin-right: 258px;
+    }
+
+    #stiker_2{
+        width: 140px;
+        height: 140px;
+        margin-top: 425px;
+        margin-left: 400px;
+    }
+
+    .contenedores_parrafos{
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .scroll-bg {
+        width: 100%;
+        height: auto;
+        float: left;
+        border-radius: 15px;
+        padding: 20px;
+        background-image: url(../imgs/hoja.png);
+        background-size:cover;
+        background-position: center;
+    }
+
+    .scroll-div{
+        height: 500px;
+    }
+
+    #contenedor{
+        background-image: none;
+    }
+
+    .img_info{
+        height: 60px;
+    }
+    
+    .img_info1{
+        height: 80px;
+    }
+    
+    .img_info2{
+        height: 130px;
+    }
+
+    footer {
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        width: 100%;
+    }
+    header {
+        height: 100px;
+    }
+    #logo {
+        width: 20%;
+        height: 70px;
+        margin-left: 5px;
+    }
+    #titulo {
+        width: 35%;
+        height: 60px;
+        margin-right: 10px;
+    }
+    h1 {
+        font-size: 25px;
+        line-height: 60px;
+    }
+    #menu_hamburguesa {
+        width: 30%;
+    }
+
+    .section-scroll{
+        width: 100%;
+    }
+}

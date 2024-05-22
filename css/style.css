@@ -1,0 +1,445 @@
+header{
+    background-color: #02267C;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 15%;
+    height: 180px;
+    margin-left: 1%;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+}
+
+#titulo{
+    width: 45%;
+    height: 140px;
+    margin-right: 1%;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Bruno Ace', cursive;
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 140px;
+    color: #F0E8D5;
+}
+
+#menu_hamburguesa{
+    margin-right: 1%;
+    width: 15%;
+    height: 100%;
+}
+
+#menu_img{
+    height: 200px;
+    width: 100%;
+}
+
+.rayas{
+    position: absolute;
+    z-index: 1;
+}
+
+#menu_img a{
+    height: 170px;
+}
+
+#menu_hamburguesa ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#menu_hamburguesa ul li {
+    display: flex;
+    flex-direction: column;
+}
+#menu_hamburguesa ul li a {
+    display: flex;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+#margin{
+    margin-top: 200px;
+}
+
+li{
+    width: 100%px;
+    /*text-align: center;*/
+}
+
+.temas{
+    padding: 50px;
+    color: rgb(247, 247, 247);
+    height: 30px;
+    line-height: 30px;
+}
+
+.menu_vertical ul li{
+    padding: 50px;
+}
+
+#menu_hamburguesa ul li a:hover {
+    background-color: #093aad;
+}
+
+#menu_hamburguesa ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+#menu_hamburguesa ul li a:hover::after {
+    transform: scaleX(1);
+}
+.menu-vertical {
+    display: none;
+    position: absolute;
+    width: 15%;
+    background-color: #02267C;
+}
+
+.menu-horizontal{
+    width: 100%;
+}
+
+.menu-horizontal:hover .menu-vertical {
+    display: block;
+}
+
+main{
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: center;
+    background-image: url(../imgs/cuadricula.svg);
+    background-position: center;
+}
+
+article{
+    width: 70%;
+    height: 550px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imgs/hoja.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#circulo{
+    border-radius: 50%;
+    background-color: #F0E8D5;
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    z-index: 2;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    background-image: url(../imgs/yo\ merenguesazul.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 19px;
+}
+
+#grupo_temas{
+    width: 40%;
+    height: 550px;
+    display: flex;
+    background-image: url(../imgs/nube.svg);
+    background-size: 100%;
+    background-position: center;
+    justify-content: center;
+}
+
+#info{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    margin-top: 180px;
+    position: absolute;
+    z-index: 3;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Bruno Ace', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: #F0E8D5;
+    background-color: #02267C;
+}
+
+
+
+.tema{
+    width: 16%;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 5x;
+    background-image: url(../imgs/tape.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo_tema{
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    line-height: 40px;
+    font-weight: bold;
+    width: 100%;
+    color: #02267C;
+}
+
+#fotos{
+    width: 55%;
+    height: 500px;
+}
+
+footer{
+    background-color: #02267C;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#links{
+    width: 70%;
+    height: 300px;
+}
+
+.opcion{
+    text-decoration: none;
+    color: #F0E8D5;
+    padding: 10px;
+}
+
+#pfp_contenedor{
+    width: 23%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pfp{
+    width: 90%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.link{
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    article{
+        width: 80%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        height: 120px;
+        width: 100%;
+    }
+    #logo {
+        width: 25%;
+        height: 100px;
+        margin-left: 5%;
+    }
+    #titulo {
+        width: 0%;
+        height: 80px;
+        margin-right: 5%;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 80px;
+    }
+    #menu_hamburguesa {
+        width: 25%;
+    }
+
+    #fotos{
+        display: none;
+    }
+
+    #collague{
+        width: 100%;
+        height: 100px;
+    }
+
+    .rayas{
+        width: 100%;
+        height: 60px;
+        margin-left: 25px;
+        margin-top: 15px;
+    }
+
+    #grupo_temas{
+        width: 100%;
+        display: flex;
+        background-image: url(../imgs/nube.svg);
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .temas{
+        height: auto;
+        width: 80%;
+    }
+
+    .tema{
+        width: 60%;
+        height: 40px;
+    }
+
+    .titulo_tema{
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    #circulo{
+        width: 170px;
+        height: 170px;
+        margin-top: 45px;
+    }
+
+    .menu-vertical {
+        width: 30%;
+        background-color: #02267C;
+        z-index: 4;
+    }
+
+    .menu-vertical :hover {
+        background-color: #093aad;
+    }
+
+    #menu_img{
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+
+    }
+
+    #margin{
+        margin-top: 100px;
+    }
+
+    #menu_img a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        width: 50%;
+        padding: 10px;
+    }
+
+    #menu_hamburguesa ul li a {
+        display: flex;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        position: relative;
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .opcion{
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    .link{
+        padding: 1px;
+    }
+
+    #pfp_contenedor{
+        width: 90px;
+        height: 90px;
+    }
+
+    #links{
+        height: 90px;
+        font-size: 1px;
+    }
+
+    #hide1{
+        display: none;
+    }
+
+    #hide2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body{
+        width: 100%;
+    }
+    header {
+        height: 100px;
+    }
+    #logo {
+        width: 20%;
+        height: 70px;
+        margin-left: 5px;
+    }
+    #titulo {
+        width: 35%;
+        height: 60px;
+        margin-right: 10px;
+    }
+    h1 {
+        font-size: 25px;
+        line-height: 60px;
+    }
+    #menu_hamburguesa {
+        width: 30%;
+    }
+}
